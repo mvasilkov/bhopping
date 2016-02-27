@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset=utf8>
+		<title>Bunnyhopping</title>
+	</head>
+	<body>
+        <canvas width=960 height=540></canvas>
+        <div class=minimap></div>
+
+        <script src="vendor/require.js"></script>
+        <script src="vendor/goo.js"></script>
+        <script src="vendor/phaser.js"></script>
+        <script>
+            define('_canvas', document.getElementsByTagName('canvas')[0])
+
+            require(['application/game', 'application/goo'], function (game, goo) {
+                'use strict'
+
+                goo.goo.callbacksPreProcess.push(function () {
+                    game.update(Date.now())
+                })
+
+                game.state.start('loading')
+            })
+        </script>
+	</body>
+</html>
