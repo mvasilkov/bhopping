@@ -18,11 +18,7 @@
             require(['application/game', 'application/goo'], function (game, goo) {
                 'use strict'
 
-                goo.goo.callbacksPreProcess.push(function () {
-                    game.update(Date.now())
-                })
-
-                game.state.start('loading')
+                game.init(goo).state.start('loading')
             })
         </script>
     </body>

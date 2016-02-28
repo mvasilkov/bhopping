@@ -3,9 +3,10 @@
     'application/background',
     'application/camera',
     'application/sun',
+    'application/util',
     '_canvas',
     '_debug',
-], function (GooRunner, background, camera, sun, canvas, debug) {
+], function (GooRunner, background, camera, sun, util, canvas, debug) {
     'use strict'
 
     var goo = new GooRunner({
@@ -20,6 +21,7 @@
         goo: goo,
         background: background.init(goo),
         camera: camera.init(goo),
-        sun: sun.init(goo),
+        _sun: sun.init(goo),
+        util: util.init(goo),
     }
 })
