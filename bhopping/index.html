@@ -1,10 +1,10 @@
 ﻿<!doctype html>
 <html>
-	<head>
-		<meta charset=utf8>
-		<title>Bunnyhopping</title>
-	</head>
-	<body>
+    <head>
+        <meta charset=utf8>
+        <title>Bunnyhopping</title>
+    </head>
+    <body>
         <canvas width=960 height=540></canvas>
         <div class=minimap></div>
 
@@ -13,6 +13,7 @@
         <script src="vendor/phaser.js"></script>
         <script>
             define('_canvas', document.getElementsByTagName('canvas')[0])
+            define('_debug', location.search == '?debug' || location.hash == '#debug')
 
             require(['application/game', 'application/goo'], function (game, goo) {
                 'use strict'
@@ -24,5 +25,5 @@
                 game.state.start('loading')
             })
         </script>
-	</body>
+    </body>
 </html>

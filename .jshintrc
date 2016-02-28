@@ -1,0 +1,12 @@
+{
+    "asi": true,
+    "freeze": true,
+    "futurehostile": true,
+    "globals": {
+        "define": false
+    },
+    "strict": true,
+    "undef": true,
+    "unused": true,
+    "-W058": true
+}
