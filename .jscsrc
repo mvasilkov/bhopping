@@ -1,5 +1,5 @@
 {
-    "preset": "yandex",
+    "preset": "airbnb",
     "requireSemicolons": null,
-    "disallowSpacesInsideObjectBrackets": null
+    "validateIndentation": 4
 }

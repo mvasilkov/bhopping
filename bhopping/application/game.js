@@ -4,6 +4,7 @@
     'application/game_over',
 ], function (loading, running, gameover) {
     'use strict'
+    /* globals Phaser: false */
 
     function init(goo) {
         Phaser.RequestAnimationFrame.prototype.start = function () {
